@@ -8,5 +8,5 @@ fi
 export GPG_TTY=$(tty)
 gpg-connect-agent updatestartuptty /bye >/dev/null
 
-[ -r ~/.bash_aliases ] && . ~/.bash_aliases
+[[ -r "${HOME}"/.bash/aliases ]] && source "${HOME}"/.bash/aliases
 
