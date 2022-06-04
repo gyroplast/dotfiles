@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="configver" type="int" value="2"/>
+  <property name="panels" type="array">
+    <value type="int" value="1"/>
+    <property name="dark-mode" type="bool" value="true"/>
+    <property name="panel-1" type="empty">
+      <property name="position" type="string" value="p=6;x=0;y=0"/>
+      <property name="length" type="uint" value="100"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="icon-size" type="uint" value="16"/>
+      <property name="size" type="uint" value="26"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="2"/>
+        <value type="int" value="3"/>
+        <value type="int" value="5"/>
+        <value type="int" value="6"/>
+        <value type="int" value="8"/>
+        <value type="int" value="9"/>
+        <value type="int" value="10"/>
+        <value type="int" value="11"/>
+        <value type="int" value="7"/>
+        <value type="int" value="12"/>
+        <value type="int" value="13"/>
+      </property>
+    </property>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="plugin-2" type="string" value="tasklist">
+      <property name="grouping" type="uint" value="1"/>
+    </property>
+    <property name="plugin-3" type="string" value="separator">
+      <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-5" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-6" type="string" value="systray">
+      <property name="square-icons" type="bool" value="true"/>
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="thunar"/>
+        <value type="string" value="networkmanager applet"/>
+      </property>
+      <property name="known-items" type="array">
+        <value type="string" value="Slack1"/>
+        <value type="string" value="zoom"/>
+        <value type="string" value="TeamViewer"/>
+        <value type="string" value="discord1"/>
+        <value type="string" value="Element1"/>
+        <value type="string" value="vlc"/>
+        <value type="string" value="blueman"/>
+        <value type="string" value="obs"/>
+        <value type="string" value="Microsoft Teams - Preview1"/>
+        <value type="string" value="TelegramDesktop"/>
+        <value type="string" value="steam"/>
+      </property>
+    </property>
+    <property name="plugin-8" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="show-notifications" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="chromium.instance10762;chromium.instance119900;chromium.instance139306;chromium.instance1549;chromium.instance2148;chromium.instance26666;chromium.instance2947;chromium.instance34744;chromium.instance36999;chromium.instance67059;chromium.instance8892;firefox.instance104240;firefox.instance105227;firefox.instance107628;firefox.instance12982;firefox.instance147414;firefox.instance154311;firefox.instance15900;firefox.instance167762;firefox.instance1772;firefox.instance1812;firefox.instance1866;firefox.instance19469;firefox.instance1968;firefox.instance1972;firefox.instance2110;firefox.instance2172;firefox.instance2177;firefox.instance2233;firefox.instance2706;firefox.instance2762;firefox.instance2768;firefox.instance2997;firefox.instance3130;firefox.instance3141;firefox.instance3266;firefox.instance3324;firefox.instance3703;firefox.instance3753;firefox.instance376469;firefox.instance4882;firefox.instance4935;firefox.instance50027;firefox.instance59270;firefox.instance6854;firefox.instance70319;firefox.instance76497;firefox.instance87109;firefox.instance9521;firefox.instance9993;vlc"/>
+    </property>
+    <property name="plugin-9" type="string" value="power-manager-plugin"/>
+    <property name="plugin-10" type="string" value="notification-plugin"/>
+    <property name="plugin-11" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-12" type="string" value="clock">
+      <property name="tooltip-format" type="string" value="%A %d %B %Y KW%V"/>
+      <property name="digital-format" type="string" value="%m%d %T"/>
+    </property>
+    <property name="plugin-13" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="clipman" type="empty">
+      <property name="settings" type="empty">
+        <property name="save-on-quit" type="bool" value="false"/>
+      </property>
+    </property>
+    <property name="plugin-7" type="string" value="xkb">
+      <property name="display-type" type="uint" value="1"/>
+      <property name="display-name" type="uint" value="1"/>
+      <property name="display-scale" type="uint" value="64"/>
+      <property name="group-policy" type="uint" value="0"/>
+    </property>
+  </property>
+</channel>
