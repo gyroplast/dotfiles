@@ -1,0 +1,15 @@
+[user]
+	name = Dennis Herbrich
+	email = dennis.herbrich+codesign@veloxis.de
+	signingkey = 6804A37FB0B9875F
+[credential]
+	helper = cache --timeout=30000
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+	defaultBranch = main
+[commit]
+	gpgsign = true
