@@ -4,9 +4,6 @@ filetype off                  " required <<========== We can turn it on later
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
@@ -15,6 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 " We'll come on that later
 " <============================================>
 Plugin 'Glench/Vim-Jinja2-Syntax'
+Plugin 'tomasiser/vim-code-dark'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -33,5 +31,7 @@ filetype plugin indent on    " required
 " Put the rest of your .vimrc file here
 
 source ~/.vim/python.vimrc
+
 set background=dark
-colorscheme industry
+
+colorscheme codedark
