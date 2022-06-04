@@ -1,0 +1,14 @@
+[__config__]
+oldver = "old_ver.json"
+newver = "new_ver.json"
+
+
+[sunvox]
+source = "regex"
+url = "https://warmplace.ru/soft/sunvox/"
+regex = "download_link.*href.*sunvox-(.+).zip"
+prefix = "v"
+#source = "htmlparser"
+#url = "https://warmplace.ru/soft/sunvox/"
+#xpath = "//div[@class='title_version'][1]/text()[1]"
+#prefix = "Latest release - v"

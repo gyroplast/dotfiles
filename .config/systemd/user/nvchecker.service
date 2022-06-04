@@ -1,0 +1,6 @@
+[Unit]
+Description=Check for software updates and send desktop notification
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/nvchecker-notify
