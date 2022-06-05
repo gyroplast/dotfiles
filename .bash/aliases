@@ -3,13 +3,21 @@ alias la='ls -al --color=auto'
 alias ls='ls --color=auto'
 
 # Make grep more user friendly by highlighting matches
-# and exclude grepping through .svn folders.
+# and exclude grepping through VCS folders.
 alias grep='grep --color=auto --exclude-dir=\.svn --exclude-dir=\.git'
 
-
+# dotfiles management
 alias config='git --git-dir="${HOME}"/.dotfiles/ --work-tree="${HOME}"'
-alias az="docker --context default run -it --rm -v ${HOME}/.ssh/airnex/azure_deh:/root/.ssh/id_rsa:ro -v ${HOME}/.ssh/airnex/azure_deh.pub:/root/.ssh/id_rsa.pub:ro -v ${HOME}/.azure:/root/.azure mcr.microsoft.com/azure-cli az"
-alias makepkg-docker="docker --context default run -it --rm -v \"\$(pwd)\":/pkg -e EXPORT_PKG=yes -e EXPORT_SRC=yes -e PACKAGER docker-makepkg"
-#alias virsh="virsh -c qemu:///system"
+
+# dockerized tools
+alias aws='docker -c default run --rm -it --mount type=bind,src="${HOME}"/.aws,dst=/root/.aws,readonly --mount type=bind,src="$(pwd)",dst=/work -w /work amazon/aws-cli'
+alias mongosh='docker -c default run --rm -it --mount type=bind,src="$(pwd)",dst=/work -w /work --entrypoint=mongosh mongo:latest'
+alias htpasswd='docker -c default run --rm -it --entrypoint=htpasswd xmartlabs/htpasswd -nB'
+
+# docker management
+## remove non-replicated ("dead") services 
+alias docker-clean-services='docker service rm $(docker service ls | grep "replicated   0/1" | awk "{print \$1;}" | tr \\n " ")'
+
+# package building and management
+alias makepkg-docker="docker -c default run --rm -it --mount type=bind,src="$(pwd)",dst=/pkg -w /pkg -e EXPORT_PKG=yes -e EXPORT_SRC=yes -e PACKAGER docker-makepkg"
 alias pacorphans="sudo pacman -Qtdq | sudo pacman -Rns -"
-alias ktech="docker --context default run -it --rm -v \"$(pwd)\":/data viktorpopkov/ktools ktech"
