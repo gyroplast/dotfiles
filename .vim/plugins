@@ -1,0 +1,47 @@
+" automatically install Vundle and run PluginInstall if needed
+if empty(glob('~/.vim/bundle/Vundle.vim'))
+  echomsg 'Starting automatic installation of Vundle'
+  let s:vundle_refresh = 1
+  execute "!git" "clone" "https://github.com/VundleVim/Vundle.vim.git" "~/.vim/bundle/Vundle.vim"
+  if v:shell_error != 0
+    echoerr 'Automatic installation of Vundle failed!  Please install manually.'
+    finish
+  endif
+endif
+
+set nocompatible              " be iMproved, required
+filetype off                  " required <<========== We can turn it on later
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" <============================================>
+" Specify the plugins you want to install here.
+" We'll come on that later
+" <============================================>
+Plugin 'Glench/Vim-Jinja2-Syntax'
+Plugin 'tomasiser/vim-code-dark'
+Plugin 'python-mode/python-mode'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+
+if exists("s:vundle_refresh") && s:vundle_refresh
+  PluginUpdate
+endif
+
+" vim: set expandtab syntax=vim sts=2 ts=2 sw=2 tw=78 norl:

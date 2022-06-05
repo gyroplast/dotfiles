@@ -1,0 +1,11 @@
+"
+" Color settings for vim
+"
+
+try
+    colorscheme codedark
+catch /^Vim\%((\a\+)\)\=:E185/
+    echoerr "color scheme 'codedark' does not exist, falling back to default."
+endtry
+
+" vim: set expandtab syntax=vim sts=2 ts=2 sw=2 tw=78 norl:

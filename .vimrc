@@ -1,37 +1,9 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required <<========== We can turn it on later
+" automatically install Vundle plugins if needed
+source ~/.vim/plugins
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+" color settings
+source ~/.vim/colors
 
-" <============================================>
-" Specify the plugins you want to install here.
-" We'll come on that later
-" <============================================>
-Plugin 'Glench/Vim-Jinja2-Syntax'
-Plugin 'tomasiser/vim-code-dark'
+syntax on
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
-" Put the rest of your .vimrc file here
-
-source ~/.vim/python.vimrc
-
-set background=dark
-
-colorscheme codedark
+" vim: set expandtab syntax=vim sts=2 ts=2 sw=2 tw=78 norl:
