@@ -13,6 +13,7 @@ set scrolloff=3     " keep 3 lines cursor scrolling offset
 set noshowmode      " do not show the current mode
 set cursorline      " highlight cursor line
 set tw=78           " wrap at 78 characters
+set sw=2
 set ts=2
 set sts=2
 
