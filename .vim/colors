@@ -10,4 +10,4 @@ catch /^Vim\%((\a\+)\)\=:E185/
     echo "color scheme 'codedark' does not exist, falling back to default."
 endtry
 
-" vim: set expandtab syntax=vim sts=2 ts=2 sw=2 tw=78 norl:
+" vim: set et ft=vim:

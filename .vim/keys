@@ -1,0 +1,4 @@
+" force write to file
+cmap w!! w !sudo tee % >/dev/null
+
+" vim: set et ft=vim:
