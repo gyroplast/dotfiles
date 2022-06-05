@@ -2,14 +2,10 @@
 
 " Install vim-plug if not found
 if empty(glob('~/.vim/autoload/plug.vim'))
+  let s:plugin_install = 1
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 endif
-
-" Run PlugInstall if there are missing plugins
-autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
-  \| PlugInstall --sync | source $MYVIMRC
-\| endif
 
 call plug#begin()
 " theme / colors
@@ -31,6 +27,12 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
 call plug#end()
+
+" catch initial plugin manager installation and force a plugin install before
+" following configuration refers to not-yet existing variables or commands.
+if exists("s:plugin_install") || len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  PlugInstall --sync
+endif
 
 " Plugin-specific settings
 " vim-gitgutter:
