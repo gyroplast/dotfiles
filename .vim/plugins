@@ -22,10 +22,23 @@ Plugin 'VundleVim/Vundle.vim'
 " Specify the plugins you want to install here.
 " We'll come on that later
 " <============================================>
-Plugin 'Glench/Vim-Jinja2-Syntax'
+
+" theme / colors
 Plugin 'tomasiser/vim-code-dark'
-Plugin 'python-mode/python-mode'
+
+" syntax
+Plugin 'Glench/Vim-Jinja2-Syntax'
+
+" general
 Plugin 'tpope/vim-sensible'
+Plugin 'tpope/vim-commentary'
+
+" Python
+Plugin 'python-mode/python-mode'
+
+" git
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -44,5 +57,9 @@ filetype plugin indent on    " required
 if exists("s:vundle_refresh") && s:vundle_refresh
   PluginUpdate
 endif
+
+" Plugin-specific settings
+" vim-gitgutter:
+set updatetime=500  " git diff markers appear after 500 ms instead of 4 s
 
 " vim: set et ft=vim:
