@@ -13,6 +13,8 @@ fi
 export GPG_TTY=$(tty)
 gpg-connect-agent updatestartuptty /bye >/dev/null
 
+# non-vendored bash completions
+[[ -s /usr/share/fzf/completion.bash ]] && source /usr/share/fzf/completion.bash
 
 # source aliases and functions
 
