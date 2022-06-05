@@ -16,4 +16,4 @@ set tw=78           " wrap at 78 characters
 set ts=2
 set sts=2
 
-" vim: set expandtab syntax=vim sts=2 ts=2 sw=2 tw=78 norl:
+" vim: set et ft=vim:

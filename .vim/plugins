@@ -45,4 +45,4 @@ if exists("s:vundle_refresh") && s:vundle_refresh
   PluginUpdate
 endif
 
-" vim: set expandtab syntax=vim sts=2 ts=2 sw=2 tw=78 norl:
+" vim: set et ft=vim:
