@@ -6,6 +6,10 @@ alias ls='ls --color=auto'
 # and exclude grepping through VCS folders.
 alias grep='grep --color=auto --exclude-dir=\.svn --exclude-dir=\.git'
 
+# clipboard / selection
+alias xcpy="xclip -selection clipboard"
+alias xpst="xclip -selection clipboard -o"
+
 # dotfiles management
 alias config='git --git-dir="${HOME}"/.dotfiles/ --work-tree="${HOME}"'
 
