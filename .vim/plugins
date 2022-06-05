@@ -32,6 +32,7 @@ Plugin 'Glench/Vim-Jinja2-Syntax'
 " general
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-commentary'
+Plugin 'Yggdroot/indentLine'
 
 " Python
 Plugin 'python-mode/python-mode'
@@ -61,5 +62,8 @@ endif
 " Plugin-specific settings
 " vim-gitgutter:
 set updatetime=500  " git diff markers appear after 500 ms instead of 4 s
+
+" indentLine
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']  " use these chars for visual indent guide levels
 
 " vim: set et ft=vim:
