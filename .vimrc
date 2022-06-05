@@ -1,4 +1,4 @@
-" automatically install Vundle plugins if needed
+" automatically install plugins if needed
 source ~/.vim/plugins
 
 " color settings
