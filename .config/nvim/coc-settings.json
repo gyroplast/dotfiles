@@ -1,0 +1,34 @@
+{
+	"coc.preferences.extensionUpdateCheck": "weekly",
+	"coc.preferences.formatOnSaveFiletypes": [
+		"py",
+		"yaml",
+		"json"
+	],
+	"python.analysis.diagnosticMode": "workspace",
+	"python.linting.flake8Enabled": true,
+	"python.formatting.provider": "black",
+	"pyright.organizeimports.provider": "isort",
+	"languageserver": {
+		"dockerfile": {
+			"command": "docker-langserver",
+			"filetypes": [
+				"dockerfile"
+			],
+			"args": [
+				"--stdio"
+			]
+		},
+		"terraform": {
+			"command": "terraform-ls",
+			"args": [
+				"serve"
+			],
+			"filetypes": [
+				"terraform",
+				"tf"
+			],
+			"initializationOptions": {}
+		}
+	}
+}

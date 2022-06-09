@@ -1,15 +1,19 @@
 " automatically install plugins if needed
-source ~/.vim/plugins
+source ~/.config/nvim/plugins.vim
 
 " color settings
-source ~/.vim/colors
+source ~/.config/nvim/colors.vim
 syntax on           " enable syntax highlighting
 
 " key bindings and remaps
-source ~/.vim/keys
+source ~/.config/nvim/keys.vim
 
-set encoding=utf-8  " this is an UTF-8 household!!1!
+set updatetime=300
+set shortmess+=c
+set signcolumn=number
+
 set scrolloff=3     " keep 3 lines cursor scrolling offset
+set number          " show line numbers
 set noshowmode      " do not show the current mode
 set cursorline      " highlight cursor line
 set tw=78           " wrap at 78 characters

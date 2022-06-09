@@ -1,5 +1,5 @@
 #
 # bash environment variables
 #
-export EDITOR=vim
+export EDITOR=nvim
 export PATH="${HOME}"/.local/bin:$PATH:"${HOME}"/Apps
