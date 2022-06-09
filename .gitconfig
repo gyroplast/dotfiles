@@ -1,7 +1,7 @@
 [user]
 	name = Dennis Herbrich
 	email = dennis.herbrich+codesign@veloxis.de
-	signingkey = 6804A37FB0B9875F
+	#signingkey = DEADBEEFCAFEFACE
 [credential]
 	helper = cache --timeout=30000
 [filter "lfs"]
@@ -12,4 +12,4 @@
 [init]
 	defaultBranch = main
 [commit]
-	gpgsign = true
+	#gpgsign = true
