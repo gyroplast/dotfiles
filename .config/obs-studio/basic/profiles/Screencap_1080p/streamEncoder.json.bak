@@ -1,0 +1,6 @@
+{
+    "bitrate": 5000,
+    "max_bitrate": 10000,
+    "preset": "hq",
+    "rate_control": "VBR"
+}
