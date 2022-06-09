@@ -18,5 +18,7 @@ gpg-connect-agent updatestartuptty /bye >/dev/null
 
 # source aliases and functions
 
-[[ -s "${HOME}"/.bash/functions ]] && source "${HOME}"/.bash/functions
-[[ -s "${HOME}"/.bash/aliases ]] && source "${HOME}"/.bash/aliases
+for src in functions aliases; do
+  [[ -s "${HOME}/.bash/${src}" ]] && source "${HOME}/.bash/${src}"
+  [[ -s "${HOME}/.bash/${src}.local" ]] && source "${HOME}/.bash/${src}.local"
+done

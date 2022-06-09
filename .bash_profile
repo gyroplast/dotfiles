@@ -1,6 +1,7 @@
 #
 # ~/.bash_profile
 #
-
-[[ -s ~/.bash/env ]] && source ~/.bash/env
-[[ -s ~/.bashrc ]] && . ~/.bashrc
+for src in ".bash/env" ".bashrc"; do
+  [[ -s "${HOME}/${src}" ]] && source "${HOME}/${src}"
+  [[ -s "${HOME}/${src}.local" ]] && source "${HOME}/${src}.local"
+done
