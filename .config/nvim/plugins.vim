@@ -19,7 +19,6 @@ let g:coc_global_extensions = [
       \ 'coc-fzf-preview',
       \ 'coc-pydocstring',
       \ 'coc-pyright',
-      \ 'coc-explorer',
       \ 'coc-sh',
       \ 'coc-markdownlint',
       \ 'coc-git'
@@ -118,7 +117,7 @@ EOF
 
 " indentLine
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']  " use these chars for visual indent guide levels
-let g:indentLine_fileTypeExclude = ['coc-explorer', 'help', 'vim']
+let g:indentLine_fileTypeExclude = ['help', 'vim']
 
 " fzf-preview
 let g:fzf_preview_command = 'bat --color=always --plain {-1}'
