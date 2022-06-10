@@ -7,6 +7,9 @@
 	],
 	"python.analysis.diagnosticMode": "workspace",
 	"python.linting.flake8Enabled": true,
+	"python.linting.flake8Args": [
+		"--extend-ignore=E501"
+	],
 	"python.formatting.provider": "black",
 	"pyright.organizeimports.provider": "isort",
 	"languageserver": {
