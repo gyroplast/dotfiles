@@ -55,6 +55,9 @@ Plug 'hashivim/vim-terraform'
 "Plug 'SirVer/ultisnips'
 "Plug 'honza/vim-snippets'
 
+" Markdown
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+
 " git
 Plug 'tpope/vim-fugitive'
 
