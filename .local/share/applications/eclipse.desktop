@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Exec=/home/deh/Apps/eclipse/eclipse
+Icon=eclipse
+Name=Eclipse
+Comment=Eclipse IDE
+Categories=IDE;Development
+Path=/home/deh/eclipse-workspaces
+Terminal=false
+StartupNotify=false
