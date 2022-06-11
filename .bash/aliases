@@ -21,6 +21,8 @@ alias config='git --git-dir="${HOME}"/.dotfiles/ --work-tree="${HOME}"'
 # dockerized tools
 alias aws='docker -c default run --rm -it --mount type=bind,src="${HOME}"/.aws,dst=/root/.aws,readonly --mount type=bind,src="$(pwd)",dst=/work -w /work amazon/aws-cli'
 alias mongosh='docker -c default run --rm -it --mount type=bind,src="$(pwd)",dst=/work -w /work --entrypoint=mongosh mongo:latest'
+alias mongodump='docker -c default run --rm -it --mount type=bind,src="$(pwd)",dst=/work -w /work --entrypoint=mongodump mongo:latest'
+alias mongorestore='docker -c default run --rm -it --mount type=bind,src="$(pwd)",dst=/work -w /work --entrypoint=mongorestore mongo:latest'
 alias htpasswd='docker -c default run --rm -it --entrypoint=htpasswd xmartlabs/htpasswd -nB'
 
 # docker management
