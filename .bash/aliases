@@ -6,8 +6,10 @@ alias ls='ls --color=auto'
 # and exclude grepping through VCS folders.
 alias grep='grep --color=auto --exclude-dir=\.svn --exclude-dir=\.git'
 
-# run $EDITOR
+# shorten often-used commands
+alias c=config
 alias e=$EDITOR
+alias g=git
 
 # clipboard / selection
 alias xcpy="xclip -selection clipboard"
