@@ -2,4 +2,4 @@
 # bash environment variables
 #
 export EDITOR=nvim
-export PATH="${HOME}"/.local/bin:$PATH:"${HOME}"/Apps
+export PATH="${HOME}"/.local/bin:$PATH:"${HOME}"/Apps:"${HOME}"/Android/Sdk/platform-tools
