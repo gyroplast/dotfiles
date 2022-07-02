@@ -65,8 +65,9 @@ omap ic <Plug>(coc-classobj-i)
 xmap ac <Plug>(coc-classobj-a)
 omap ac <Plug>(coc-classobj-a)
 
-" Add `:Format` command to format current buffer.
+" Add `:Format` command and \F shortcut to format current buffer.
 command! -nargs=0 Format :call CocActionAsync('format')
+nmap <leader>F :call CocActionAsync('format')<CR>
 
 " Add `:Fold` command to fold current buffer.
 command! -nargs=? Fold :call     CocAction('fold', <f-args>)
