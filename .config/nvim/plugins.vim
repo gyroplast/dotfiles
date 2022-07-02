@@ -128,4 +128,6 @@ let g:fzf_preview_command = 'bat --color=always --plain {-1}'
 " Add (Neo)Vim's native statusline support.
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
+" Find Python workspaces reliably
+au FileType python let b:coc_root_patterns = ['.git', '.env', 'venv', '.venv', 'setup.cfg', 'setup.py', 'pyproject.toml', 'pyrightconfig.json', 'env']
 " vim: set et ft=vim:
