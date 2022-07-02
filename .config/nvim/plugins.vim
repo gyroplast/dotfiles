@@ -107,7 +107,7 @@ telescope.setup {
       },
     },
     terraform_doc = {
-      url_open_command = "xdg-open"
+      url_open_command = "links"
     }
   }
 }
