@@ -3,3 +3,6 @@
 #
 export EDITOR=nvim
 export PATH="${HOME}"/.local/bin:$PATH:"${HOME}"/Apps:"${HOME}"/Android/Sdk/platform-tools
+
+# rust build target override
+export CARGO_BUILD_TARGET=aarch64-linux-android
