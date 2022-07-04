@@ -13,6 +13,7 @@
       <value type="string" value="nvchecker"/>
       <value type="string" value="org.kde.kdenlive"/>
       <value type="string" value="signal"/>
+      <value type="string" value="Slack"/>
       <value type="string" value="Studio"/>
       <value type="string" value="teams"/>
       <value type="string" value="thunar"/>
