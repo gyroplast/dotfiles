@@ -31,7 +31,11 @@ nnoremap <leader>fs <cmd>Telescope symbols<cr>
 nnoremap <leader>fp <cmd>Telescope project<cr>
 
 " Coc / Coding shortcuts
+" refresh/reopen suggestion box
 inoremap <silent><expr> <c-space> coc#refresh()
+" confirm selection in suggestion box/code autocompletion with Enter
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " Use `[g` and `]g` to navigate diagnostics
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
