@@ -1,3 +1,9 @@
 [http-basic]
-[http-basic.local-dev]
-username = "deh"
+[http-basic.ldev]
+username = "jenkins"
+
+[http-basic.llstage]
+username = "jenkins"
+
+[http-basic.llprod]
+username = "jenkins"

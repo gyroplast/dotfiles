@@ -2,5 +2,11 @@
 in-project = true
 
 [repositories]
-[repositories.local-dev]
-url = "http://127.0.0.1:8182/simple/"
+[repositories.ldev]
+url = "http://pypi.ldev.eu.langlauf.tech/simple/"
+
+[repositories.llstage]
+url = "https://pypisrv.stage.eu.langlauf.tech/simple/"
+
+[repositories.llprod]
+url = "https://pypi.eu.langlauf.tech/simple/"
