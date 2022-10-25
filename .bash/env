@@ -4,5 +4,8 @@
 export EDITOR=nvim
 export PATH="${HOME}"/.local/bin:$PATH:"${HOME}"/Apps:"${HOME}"/Android/Sdk/platform-tools
 
+# "smart" choice of pager to use, gracefully degrading through options
+export PAGER=page
+
 # default hypervisor for libvirt shall be the system, not a user session
 export LIBVIRT_DEFAULT_URI="qemu:///system"
