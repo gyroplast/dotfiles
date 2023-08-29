@@ -9,7 +9,9 @@
 [user]
   name = Dennis Herbrich
   email = herbrich@langlauf.io
-  #signingkey = **Your GPG ID**
+  ; name = **Your Name**
+  ; email = **Your E-Mail Address**
+  ; signingkey = **Your GPG ID**
 
 [commit]
   #gpgsign = true
