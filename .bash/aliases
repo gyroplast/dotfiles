@@ -1,8 +1,3 @@
-# usage: checkCmd <command/binary name or path>
-function checkCmd() {
-  if type "${1:-idontexist_leflehqqwfeoiw}" 2>/dev/null >/dev/null; then return 0; fi; return 107
-}
-
 alias ll='ls -l --color=auto'
 alias la='ls -al --color=auto'
 alias ls='ls --color=auto'
@@ -11,22 +6,11 @@ alias ls='ls --color=auto'
 # and exclude grepping through VCS folders.
 alias grep='grep --color=auto --exclude-dir=\.svn --exclude-dir=\.git'
 
-# use pager with syntax highlighting, but without distracting decorations, to
-# allow for terminal copy/paste.
-if checkCmd bat; then
-	alias page='bat -p'
-elif checkCmd less; then
-  alias page='less -R'
-elif checkCmd more; then
-  alias page='more'
-else
-  alias page='cat'
-fi
-
 # shorten often-used commands
 alias c=config
 alias e=$EDITOR
 alias g=git
+alias p=pager.sh
 
 # clipboard / selection
 alias xcpy="xclip -selection clipboard"

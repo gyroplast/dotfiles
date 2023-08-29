@@ -3,8 +3,6 @@
 
 PS1='[\u@\h \W]\$ '
 
-export HISTCONTROL=ignorespace
-
 # GPG agent for SSH
 unset SSH_AGENT_PID
 if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then

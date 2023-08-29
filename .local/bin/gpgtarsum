@@ -1,0 +1,5 @@
+#!/bin/bash
+set -e
+set -x
+_target="${2:-$(basename "${1}")}"
+bsdtar --acls --xattrs -c "${1}" | gpg -e -r 0x593D815B3196C248 | tee "${_target}.tar.gpg" | sha256sum | tee "${_target}.tar.gpg.sha256sum"
