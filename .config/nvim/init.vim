@@ -1,3 +1,6 @@
+" <Leader> is spacebar
+let mapleader=' '
+
 " automatically install plugins if needed
 source ~/.config/nvim/plugins.vim
 
