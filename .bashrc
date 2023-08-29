@@ -3,6 +3,7 @@
 
 PS1='[\u@\h \W]\$ '
 
+export HISTCONTROL=ignorespace
 
 # GPG agent for SSH
 unset SSH_AGENT_PID
