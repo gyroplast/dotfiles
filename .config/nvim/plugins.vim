@@ -82,7 +82,7 @@ require("todo-comments").setup {
 }
 
 -- telescope extensions 
-telescope = require('telescope')
+telescope = require("telescope")
 telescope.setup {
   extensions = {
     fzf = {
