@@ -24,7 +24,7 @@ nnoremap t9  9gt
 
 " open decent file explorer
 "nmap <leader>e :CocCommand explorer --position right --width 60<CR>
-nmap <leader>e :Telescope file_browser<CR>
+nmap <leader>fe :Telescope file_browser<CR>
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fG <cmd>Telescope live_grep<cr>
 nnoremap <leader>fs <cmd>Telescope symbols<cr>

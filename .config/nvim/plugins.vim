@@ -37,9 +37,9 @@ Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' }
 Plug 'tmhedberg/SimpylFold'  " better syntax-folding for Python
 
 " Finder / Browser
-Plug 'kyazdani42/nvim-web-devicons'
-Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-telescope/telescope-project.nvim'
 Plug 'nvim-telescope/telescope-file-browser.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
@@ -47,7 +47,6 @@ Plug 'ANGkeith/telescope-terraform-doc.nvim'
 
 "
 Plug 'folke/todo-comments.nvim'
-Plug 'kyazdani42/nvim-web-devicons'
 
 Plug 'hashivim/vim-terraform'
 
@@ -83,9 +82,19 @@ require("todo-comments").setup {
 }
 
 -- telescope extensions 
-telescope = require('telescope')
+telescope = require("telescope")
 telescope.setup {
   extensions = {
+    project = {
+      base_dirs = {
+        {path = '~/workspace', max_depth = 2},
+      },
+      hidden_files = false,
+      theme = "dropdown",
+      order_by = "recent",
+      search_by = "title",
+      sync_with_nvim_tree = false,
+    },
     fzf = {
       fuzzy = true,                    -- false will only do exact matching
       override_generic_sorter = true,  -- override the generic sorter
