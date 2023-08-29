@@ -85,6 +85,16 @@ require("todo-comments").setup {
 telescope = require("telescope")
 telescope.setup {
   extensions = {
+    project = {
+      base_dirs = {
+        {path = '~/workspace', max_depth = 2},
+      },
+      hidden_files = false,
+      theme = "dropdown",
+      order_by = "recent",
+      search_by = "title",
+      sync_with_nvim_tree = false,
+    },
     fzf = {
       fuzzy = true,                    -- false will only do exact matching
       override_generic_sorter = true,  -- override the generic sorter
