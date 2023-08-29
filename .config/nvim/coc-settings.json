@@ -12,16 +12,8 @@
 	],
 	"python.formatting.provider": "black",
 	"pyright.organizeimports.provider": "isort",
+	"docker.enable": true,
 	"languageserver": {
-		"dockerfile": {
-			"command": "docker-langserver",
-			"filetypes": [
-				"dockerfile"
-			],
-			"args": [
-				"--stdio"
-			]
-		},
 		"terraform": {
 			"command": "terraform-ls",
 			"args": [
