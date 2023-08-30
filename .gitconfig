@@ -7,6 +7,9 @@
 
 # Global Config
 [user]
+  name = Dennis Herbrich
+  email = dennis.herbrich+codesign@veloxis.de
+  signingkey = 0x6804A37FB0B9875F
   ; name = **Your Name**
   ; email = **Your E-Mail Address**
   ; signingkey = **Your GPG ID**
