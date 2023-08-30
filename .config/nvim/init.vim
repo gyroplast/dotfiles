@@ -1,6 +1,10 @@
 " <Leader> is spacebar
 let mapleader=' '
 
+" no need for Perl and Ruby providers
+let g:loaded_perl_provider = 0
+let g:loaded_ruby_provider = 0
+
 " automatically install plugins if needed
 source ~/.config/nvim/plugins.vim
 
