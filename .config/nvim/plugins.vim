@@ -64,6 +64,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 
+Plug 'luisjure/csound-vim'
+Plug 'kunstmusik/csound-repl'
+
 Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install() }}
 call plug#end()
 
